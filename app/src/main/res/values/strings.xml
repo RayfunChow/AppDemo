@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="username">用户名</string>
+    <string name="password">密码（长度6~16位）</string>
+    <string name="sign_in">已有账户？马上登陆</string>
+    <string name="sign_up">创建新用户</string>
+    <string name="submit">提交信息</string>
+</resources>
