@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="基本设置">
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="example_switch"
+            android:summary="勾选打开原料剩余提示"
+            android:title="@string/pref_title_social_recommendations" />
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="example_switch"
+            android:summary="勾选打开饮水时间提示"
+            android:title="饮水时间提示" />
+
+        <PreferenceCategory android:title="高级设置">
+            <Preference android:title="账户同步设置">
+                <intent android:action="android.settings.SYNC_SETTINGS" />
+            </Preference>
+            <SwitchPreference
+                android:defaultValue="true"
+                android:key="notifications_new_message"
+                android:title="消息通知" />
+            <EditTextPreference
+                android:capitalize="words"
+                android:inputType="textCapWords"
+                android:key="example_text"
+                android:maxLines="1"
+                android:selectAllOnFocus="true"
+                android:singleLine="true"
+                android:title="@string/pref_title_display_name" />
+        </PreferenceCategory>
+        <ListPreference
+            android:defaultValue="-1"
+            android:entries="@array/pref_example_list_titles"
+            android:entryValues="@array/pref_example_list_values"
+            android:key="example_list"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:title="@string/pref_title_add_friends_to_messages" />
+        <MultiSelectListPreference
+            android:dialogTitle="@string/settings_multi_select_list_preference_dialog_title"
+            android:entries="@array/settings_multi_select_list_preference_titles"
+            android:entryValues="@array/settings_multi_select_list_preference_values"
+            android:key="multi_select_list"
+            android:title="应用颜色主题" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="其他设置">
+        <!-- This preference simply launches an intent when selected. Use this UI sparingly, per design guidelines. -->
+        <Preference
+            android:key="clear_cache"
+            android:title="清理缓存" />
+
+        <Preference
+            android:summary=""
+            android:title="关于我们">
+            <intent
+                android:action="com.example.a6481.projecttest.SETTING_START_ACTIVITY"
+                android:targetClass="com.example.a6481.projecttest.activity.FullscreenActivity"
+                android:targetPackage="com.example.a6481.projecttest" />
+        </Preference>
+    </PreferenceCategory>
+
+</PreferenceScreen>

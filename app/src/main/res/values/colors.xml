@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#039be5</color>
+    <color name="colorPrimaryDark">#0288d1</color>
     <color name="colorAccent">#e91e63</color>
     <color name="link_blue">#001aff</color>
     <color name="white">#ffffff</color>
@@ -53,7 +53,7 @@
 
     <color name="fbutton_color_clouds">#ecf0f1</color>
 
-    <color name="fbutton_color_silver">#bdc3c7</color>
+    <color name="fbutton_color_silver">#e0e0e0</color>
 
     <color name="fbutton_color_concrete">#95a5a6</color>
 
